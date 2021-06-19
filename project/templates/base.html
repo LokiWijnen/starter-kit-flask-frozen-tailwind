@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% assets 'css' %}
+    <link rel="stylesheet" href="{{ ASSET_URL }}">
+    {% endassets %}
+
+    <title>Flask + Frozen + Tailwind</title>
+</head>
+
+<body class="bg-blue-100">
+    <div class="example_custom_base_template_class">
+        The content of this div is from: /project/templates/base.html
+    </div>
+    {% block content %}
+    {% endblock content %}
+</body>
+
+</html>
