@@ -4,6 +4,7 @@ A starter kit to help you create a static website builder using Flask and Tailwi
 
 The `requirements.txt` and `package-lock.json` files are there just for reference. I would suggest deleting these and starting with a fresh and up-to-date set of libraries.
 
+
 ## Table of contents
 
 - [Tech stack](#tech-stack)
@@ -12,7 +13,9 @@ The `requirements.txt` and `package-lock.json` files are there just for referenc
 - [Development](#development)
   - [The manual way](#the-manual-way)
   - [The scripted way](#the-scripted-way)
+- [Demo](#demo)
 - [Useful commands for beginners](#useful-commands-for-beginners)
+
 
 ## Tech stack
 
@@ -32,9 +35,11 @@ out for something else on your own.
 - [autoprefixer](https://github.com/postcss/autoprefixer)
 - [@fullhuman/postcss-purgecss](https://github.com/FullHuman/purgecss/tree/master/packages/postcss-purgecss)
 
+
 ## Requirements
 
 As long as you already have [Python](https://www.python.org/), [Node](https://nodejs.org/), and [npm](https://www.npmjs.com/get-npm) installed, you should be good to go.
+
 
 ## Initial setup
 
@@ -63,6 +68,7 @@ Install the necessary Node libraries:
 ```shell
 npm install tailwindcss postcss postcss-cli autoprefixer @fullhuman/postcss-purgecss
 ```
+
 
 ## Development
 
@@ -123,6 +129,17 @@ This will generate a much smaller CSS file containing only the CSS content that 
 ```shell
 scripts/build.sh
 ```
+
+
+## Demo
+
+The [Demo](https://starter-kit-flask-frozen-tailwind-7ba25a.netlify.app/) currently only contains a `homepage` and a `404` page.
+
+The visuals are based on a free theme by [tailwindtoolbox.com](https://www.tailwindtoolbox.com).
+
+Hosting is provided by [netlify.com](https://www.netlify.com).
+(The [netlify.toml](https://github.com/LokiWijnen/starter-kit-flask-frozen-tailwind/blob/master/netlify.toml) in the root of the project provides the 404 redirect functionality)
+
 
 ## Useful commands for beginners
 
