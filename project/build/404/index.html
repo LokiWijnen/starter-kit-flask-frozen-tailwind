@@ -9,9 +9,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
-    {% assets 'css' %}
-    <link rel="stylesheet" href="{{ ASSET_URL }}">
-    {% endassets %}
+    
+    <link rel="stylesheet" href="/static/dist/main.css?183ebe06">
+    
 </head>
 
 <!-- This theme based on a free theme by tailwindtoolbox.com -->
@@ -61,24 +61,22 @@
         </div>
         <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
-    {% block content %}
+    
     <!--Hero-->
     <div class="pt-32">
         <div class="container px-3 pb-32 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-5/5 justify-center items-start text-center md:text-left">
-                <p class="uppercase tracking-loose w-full">Something's not right...</p>
-                <h1 class="my-4 text-3xl font-bold leading-tight">
-                    Your template file is probably missing its `content` block.
-                    <br>You need to add the following:
+                <p class="uppercase tracking-loose w-full">Error!</p>
+                <h1 class="my-4 text-5xl font-bold leading-tight">
+                    Page not Found
                 </h1>
-                <code class="leading-normal text-2xl mb-8">
-                    {% raw %}
-                        {% block content %}
-                        <br>...
-                        <br>{% endblock content %}
-                    {% endraw %}
-                </code>
+                <p class="leading-normal text-2xl mb-8">
+                    Sorry, what you were looking for is just not there...
+                </p>
+                <a href="/" class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    Return to homepage
+                </a>
             </div>
         </div>
     </div>
@@ -96,7 +94,7 @@
             </g>
         </svg>
     </div>
-    {% endblock content %}
+
     <!--Footer-->
     <footer class="bg-white">
         <div class="container mx-auto px-8">
@@ -173,7 +171,7 @@
         </div>
     </footer>
 
-    {% block endscripts %}
+    
     <script>
         /*Toggle dropdown list*/
         /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
@@ -211,7 +209,7 @@
             return false;
         }
     </script>
-    {% endblock endscripts %}
+    
 </body>
 
 </html>
@@ -231,20 +229,3 @@
 
 
 
-{#
-
-{% assets 'css' %}
-<link rel="stylesheet" href="{{ ASSET_URL }}">
-{% endassets %}
-
-<title>Flask + Frozen + Tailwind</title>
-</head>
-
-<body class="bg-blue-100">
-    {% block content %}
-    {% endblock content %}
-</body>
-
-</html>
-
-#}
