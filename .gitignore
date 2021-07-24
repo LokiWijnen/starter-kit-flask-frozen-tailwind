@@ -2,6 +2,7 @@ venv
 node_modules
 __pycache__
 .webassets-cache
+.DS_Store
 
 /project/build/static/src
 /project/static/dist
